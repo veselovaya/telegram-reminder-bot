@@ -110,7 +110,9 @@ async def handle_recurring_reminder(message):
 
     cron_args = {}
 
-    if "понедельник" in pattern_part:
+    if "день" in pattern_part:
+       pass
+    elif "понедельник" in pattern_part:
         cron_args["day_of_week"] = "mon"
     elif "вторник" in pattern_part:
         cron_args["day_of_week"] = "tue"
