@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: telegram-reminder-bot
+    env: python
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7790141166:AAEhl__feD-KGPArkiy0fF_3WsFKcnz9NF8
